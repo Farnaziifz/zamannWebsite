@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1261.287" height="498.894" viewBox="0 0 1261.287 498.894">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#002c3e"/>
+      <stop offset="1" stop-color="#002c3e" stop-opacity="0.89"/>
+    </linearGradient>
+    <filter id="our_team_Back" x="0" y="0" width="1261.287" height="498.894" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#our_team_Back)">
+    <path id="our_team_Back-2" data-name="our team Back" d="M19288.826,1265.689s-120.885-33.79-219.93,0c-91.336,31.161-171.822,67.553-294.328,67.279-255.764-.572-283.146-107.642-487.568,9.575s-279.121,291.429,0,364.158,311.391-36.926,487.568-40.085,381.365,75.117,514.258,19.151S19288.826,1265.689,19288.826,1265.689Z" transform="translate(-18095.6 -1244.67)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

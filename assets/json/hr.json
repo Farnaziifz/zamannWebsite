@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Alireza Zarei",
+    "title": "Managing Director",
+    "img": "../img/ali.png"
+  },
+  {
+    "name": "Marco Klinger",
+    "title": "Quality Manager",
+    "img": "../img/marco.png"
+  },
+  {
+    "name": "Matthias Bley",
+    "title": "Quality Manager",
+    "img": "../img/mattias.png"
+  },
+  {
+    "name": "Paul Hartman",
+    "title": "Project Manager",
+    "img": "../img/paul.png"
+  },
+  {
+    "name": "Monika Braun",
+    "title": "Qualified Person",
+    "img": "../img/monika.png"
+  },
+  {
+    "name": "Cludia Zollhofer",
+    "title": "Compliande Manager",
+    "img": "../img/2.png"
+  }
+]

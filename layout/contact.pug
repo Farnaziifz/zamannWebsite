@@ -1,0 +1,49 @@
+extends ./partial/layout.pug
+block vars
+  - var classPage = 'contact'
+block header
+  .container#indexContainer
+      .menu_box
+        block menu
+          include ./mixins/menu.pug
+block content
+  .container-fluid
+    .row
+      .col-lg-12.col-md-12.col-sm-12.noPadding
+        .header
+          .banner
+          .heading 
+            h1 Get in touch with us
+          .shy
+            p Don't be shy!
+          .text
+            p If you have any questions concerning Zamann Pharma Support and privacy issues, just fill in the form below so we can answer your question(s) as efficiently as possible.
+  .container 
+    .row
+      .col-xl-6.col-lg-6.col-md-12.col-sm-12
+        .form
+          h3
+            strong YOUR 
+            span Message
+          form(action="")
+            input(type="text", placeholder="Company").form-contact
+            input(type="text", placeholder="Name (required)" required).form-contact
+            input(type="email", placeholder="E-Mail (required)").form-contact
+            textarea(name="Message", cols="30", rows="10", placeholder="Message").textarea-contact
+            .submit
+              span Your data will only be used to contact you and will not be deleted. unless explicitly requested. Please refer to the privacy policy in the footer (below) of the page.
+              button(type="submit").sumbit-contact Submit
+      .col-xl-6.col-lg-6.col-md-12.col-sm-12
+        h3.mapHead
+            strong OUR 
+            span Office
+        .office
+          .map-container#map
+          .contact-info
+            h6 Zamann Pharma Support
+            p Ernst Ludwigstr. 26 68623 Lampertheim 
+            p +49 (0) 6206/703 65 70  info@zamann-pharma.com
+
+            
+
+  include ./mixins/footer.pug

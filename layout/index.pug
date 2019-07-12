@@ -1,0 +1,160 @@
+extends ./partial/layout.pug
+
+block header
+  .container#indexContainer
+      .menu_box
+        block menu
+          include ./mixins/menu.pug
+block content
+  .conatiner-fluid.mainSection
+    .row.gradiant
+      .col-xl-12.col-lg-12.col-md-12.col-sm-12.noPadding
+        .first-section
+          .firstSection-header(data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad")
+            h1 Zamann Pharma Support
+            h4 Increase complience in life sciences processes and IT
+            .col-xl-5.col-lg-5.col-md-8
+              p Zaman Pharma support is as trusted consulting company and software developer exclusively specialized in the life science indusrty.
+              p Our customers comparis of the largest pharmaceutical companies of the world and medium-sized corporations. Our employees, the demanding and constantly changing environment and customer infrastructure are strong foundation for future success and for a close partnership.
+    .row
+      .col-lg-6.col-md-12.col-sm-12.noPadding
+        .leftSection(data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad")
+          h3
+            span.s1 Experience
+            span.s2 Innovation 
+            span.s3 Success
+          p Our experts and consultants provide a wide synergetic range of services which enables our teams to fulfil our customers requirements in a fast and efficient fashion. Zamann Pharma Support does not only provide life science focus project management, but also a wide range of outsourcing activities and business support services.
+      .col-lg-6.col-md-12.col-sm-12.noPadding
+        .rightSection
+          img.secondImg(src="img/a.png")
+    .row
+      .col-lg-6.col-md-12.col-sm-12.noPadding
+        .our-team(data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad")
+          h3 
+            span.s4 OUR 
+            span.s5 TEAM
+          p Our employees have a diverse background and corresponding practical experience focused on the life science industry. Our people are our most important asset, and fully leveraging their potential is critical to our success. We want them to feel proud of their work and the company they work for. We motivate our employees through strong leadership, individual development opportunities and rewards based on achievement.
+    .row
+      .col-lg-12.col-md-12
+        .team-slider
+          .curv-bgc
+            .owl-carousel
+              each val in hr
+                .team-box
+                  img(src=val.img)
+                  p= val.name
+                  p.title=val.title
+    .row.gradiant
+      .col-lg-12.col-md-12.noPadding
+        .vision
+          h3 
+            span.s6 Vision 
+            span.s7 and 
+            span.s8 Mission
+          p A culture focused on innovation, trust and teamwork enables Zamann Pharma Support to flourish in the life science sector through excellent project efficiency and strong partnerships. Our open communication and a results-driven approach foster an enthusiastic, stimulating environment for both employee and company development.
+          h3.inov INNOVATION
+          .inovBox(data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad")
+            p We challenge assumptions conventional wisdom and consider the opportunity in every situation. We provide the time and freedom to innovate.
+          h3.team-work
+            strong TRUST 
+            span AND 
+            strong TEAMWORK
+          .trust(data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quad")
+            p We know that our peaple make all the diffrence and Trust #{"&"} Teamwork fundamental to our work. We engage fully and positively with colleagues. Through sharing ideas and responsiblities, we maximize our experties and skills because working together yeileds greater resutls.
+          h3.open 
+            strong OPEN 
+            span COMMUNICATION
+          .communication(data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-quad")
+            p In order to advance our projects rapidly, we need to make sound decisions based on facts. We listen to and inquire about others' and opinions, advice and expirence. the ensures efficiency use of our resources.
+          h3.result
+            strong REULTS 
+            span DRIVEN
+          .driven(data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-quad")
+            p We set clear, ambitious objectives - aligned to the company strategy - to deliver high performance and seek and rely on data to make decisions. We aim to be consistent and clear in decision making, and focus our drive on simple, practical approaches.
+    .row
+      .col-lg-6.col-md-6.col-sm-12.noPadding
+        .slider-control
+          h3
+            strong OUR 
+            span SERVICES
+    .row
+      .col-lg-6.col-md-6.col-sm-12
+        .sliderOptions
+          ul.tabs-title
+            li.tab-title
+              span.radio-box.active-teams
+              a.is-open(href="#trackwise") Trackwise
+            li.tab-title
+              span.radio-box
+              a(href="#rollout") Global Rollout
+            li.tab-title
+              span.radio-box
+              a(href="#organization") Run Organization
+            li.tab-title
+              span.radio-box
+              a(href="#demand") Demand Management
+            li.tab-title
+              span.radio-box
+              a(href="#project") Project Management
+            li.tab-title
+              span.radio-box
+              a(href="#validation") Computer System Validation
+            li.tab-title
+              span.radio-box
+              a(href="#digital") Digital Environmental Monitoring
+      .col-lg-6.col-md-6.col-sm-12
+        .slider-desc
+          .options-desc.is-open#trackwise Our services mainly concentrate on Trackwise, an application developed by Sparta Systems, which is used globally as a quality management system and which is in increasing demand. Our specialists have first-class technical knowledge about the software and can support your company from the first steps in development, through to ongoing support for your business following implementation.
+          .options-desc#rollout
+            p Establishing a training concept during the deployment phase is decisive for users’ future satisfaction and for them working in an efficient way. Problems in this section can lead to serious consequences during the hypercare phase, which may not just cause show stoppers, but may also endanger the entire establishment of the system. To reduce the insecurity of the users to a minimum as well as to completely eliminate potential risks, the harmonisation of the development and deployment phase is vital as part of a carefully adjusted and mature training concept.
+            p Our expertise includes the creation of user concepts to be considered when specifying the configuration and during the development phase, as well as the production of training materials and e-learning modules and the preparation, training and support of users and corresponding user communities.
+            p Even long-established systems often have plenty of room for improvement in this area and can later be modified and improved.
+          .options-desc#organization
+            p An established GxP system needs a lot of support. The complexity of the system and its processes inevitably lead to plenty of queries from the users. The numerous possible combinations of fields, user rights, interfaces and process procedures regularly lead to new requirements and scenarios, which were not covered or sufficiently taken into account during the development phase. Processes must be modified and configurations must be reconsidered. The organisation running the system is generally responsible for its operation and for ensuring compliance.
+            p The main responsibilities of the organisation running a system include communication with the users and potential key or power users, providing support to the corresponding user groups and passing on queries as part of global business support. To register queries, to forward them and process them, a company-specific tracking or ticket system is required which also permits extensive evaluation.
+            p Our experience in this field allows us to quickly categorise questions, to introduce corresponding processes if necessary, and to send the user a satisfactory answer as quickly as possible. This area also includes so-called incident and bug handling, which requires quick and effective processing when things get serious and which represents an important part of the services which we provide.
+          .options-desc#demand
+            p The subjects that arise during business support often lead to modifications and optimisation of processes and of the system itself. Users can also notify the organisation running the system of their own ideas and supply requests for changes, to suggest measures which would increase efficiency. Demand management involves pre-filtering the corresponding optimization options, to filter out the practicable suggestions and to prevent an excess of change requests and associated work.
+            p Pre-filtered suggestions (demands) are discussed together with the process owner concerned and the IT department. As necessary they will be modified, will be correspondingly prioritised and organised as part of the release management, which summarises all changes into packages for implementation in the system and prepares them for the preceding validation. Such changes inevitably lead to modifications to the training material, which has to be permanently updated and which, as required, can lead to mandatory retraining of users.
+            p Our experts have many years of experience in this field and can make use of a wide spectrum of technical knowledge, permitting practical demand planning and controlled releases of your application.
+          .options-desc#project
+            p Managing projects competently and intelligently is our passion.
+            p Our project leaders combine deep compliance expertise with high‐class project and change management. This allows us to create intelligent success through processes and solutions that are quickly adapted by the organization and that efficiently guarantee the fulfillment of the legal framework requirements.
+            p Our experienced staff supports tasks such as Software Implementation, GxP Process Adaptation, CAPA Management, Complaint Handling, Change Control or Document Control. Different operational models are possible, e.g. managed services which are adapted to your needs.
+          .options-desc#validation
+            p CSV (Computer System Validation) is the process of ensuring that any technology component (software or hardware) is fulfilling its purpose in line with the regulatory guidelines for a certain industry. It is especially crucial in FDA-regulated industries like biotech and pharma, since products from these sectors impact public health and safety.
+            p It’s essential to maintain quality standards in pharma since non-conformance can have far-reaching consequences. Computer system validation checks the effectiveness and the efficiency with which the system is meeting the purpose for which it was designed.
+            p At Zamann Pharma Support, we can assist you with setting up a CSV schedule within your company, as well as all your other validation and qualification needs. Get in touch with us to discuss your requirements and queries today!
+          .options-desc#digital
+            p For the production of safe medical devices, pharmaceuticals or biotherapeutics, manufacturing environment conditions are of paramount importance. By controlling and monitoring the manufacturing environment, potential bioburden contamination can be limited, helping to ensure a high sterility assurance level for finished products.
+            p Zamann Pharma Support has experience in working with manufacturers to develop and implement effective environmental monitoring process and their corresponding software packages.
+    .row
+      .col-lg-12.col-md-12.col-sm-12.noPadding
+          .wavse-container
+            .w1
+            .w2
+            .w3
+    .row
+      .col-lg-12.col-md-12.noPadding
+        .social
+          .social-img
+            .social-banner(data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-quad")
+              h1 Social Commitment
+          .social-div
+            .social-text
+              p It is part of who we are to participate in community life, to have a positive impacton the social environment at our locations, and to open up new prospects for those inneed. Our social commitment rests on two pillars: Regional Care and Global Care.
+            .controled-div
+              .first-div
+                .germany
+                  img(src="img/germany.jpg", alt="")
+                .regonal
+                  h2 REGIONAL
+                  p In addition to the many things we do ourselves, we provide donations and sponsorship to support projects led by partner organizations or individuals. As a company, we also encourage our staff members to engage as volunteers, so that they can get involved with partner organizations, actively shape their communities and thus strengthen the bonds between the company and the region.
+              .sec-div
+                .earth
+                  img(src="img/earth.jpg", alt="")
+                .global
+                  h2 GLOBAL
+                  p We believe that all children have the right to education as a route out of poverty. Zamann Pharma Support supports NGOs and other charity organizations to improve needed infrastructure, provide schooling material and help people in need. We also support animal shelters in remote areas of West Asia and provide much needed funding and support to various sites. Please follow us on our journey and the path of a better tomorrow.
+    block footer
+      include ./mixins/footer.pug
