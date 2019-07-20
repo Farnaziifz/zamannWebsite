@@ -43,8 +43,10 @@ $(document).on("click", ".navbar-toggler", function () {
   if($(this).hasClass("collapsed")) {
     
     $('.header').css('margin-top', '-100px')
+    $('.header-comptetence').css('margin-top', '-100px')
   } else {
     $('.header').css('margin-top', '0')
+    $('.header-comptetence').css('margin-top', '0')
   }
   
 })

@@ -1,0 +1,77 @@
+extends ./partial/layout.pug
+block vars
+  - var classPage = 'contact'
+block header
+  .container#indexContainer
+    .menu_box
+      block menu
+        include ./mixins/menu.pug
+block content
+  .container-fluid
+    .row
+      .col-lg-12.col-md-12.col-sm-12.noPadding
+        .header-comptetence
+          .banner
+          .heading
+            h1 Competences
+          .compt-small
+            a(href="#transform")
+              strong BUSINESS 
+              span PROCESS 
+              strong TRANSFORMATION
+            a(href="#project-mng")
+              strong PROJECT 
+              span MANAGMENT
+            a(href="#outsourcing")
+              strong OUTSOURCING
+  .container-fluid.gradiant
+    .row
+      .container
+        .row
+          .col.col-12.col-lg-5.col-sm-12
+            .comp-transformation-right
+              img(src="img/comp-1.png", alt="business process transformation")
+          .col.col-lg-7.col-sm-12.col-12
+            .comp-transformation-left
+              h2#transform
+                strong BUSINESS PROCESS TRANSFORMATION
+              .comp-text
+                p Agility, mobility and new ways of working – nothing is more constant than change.
+                p But that’s not enough: In the pharmaceutical and biotechnology industry, the rapid advances in genetics and immunology, the technological revolution in laboratories and hardened conditions in the health market also mean that the prerequisites for success are constantly changing. Through globalization, extended value creation chains and the legally anchored, complete monitoring of pharmaceutical products, the quality and integrability of the business processes are becoming more important determinants of company success. We have supported our clients in the optimization of their process landscape in the GxP environment and beyond for many years now and can use a wide repertory of experience to successfully solve all challenges.
+        .row.reverse
+          .col.col-12.col-lg-7.col-sm-12
+            .comp-project-left
+              h2#project-mng
+                strong PROJECT MANAGEMENT
+              .comp-text
+                p As project delivery methods have evolved, so has project leadership. Hybrid approaches have emerged, where traditional Waterfall project and program managers are now faced with the prospect of having a portion of their work use iterative Agile approaches. On the other side, Agile Scrum Masters and product managers executing rapid iterations of new products have to now contend with budgets, financial forecasts, release schedules and business case benefits, as well as with aligning implementation of products with other projects across the enterprise. 
+                p Less complexity, more efficiency and one step ahead of the competition. Pharmaceutical companies who want to benefit from the “new ways of working,” honing business processes, optimizing the use of technologies and responding with a customized corporate culture. Accompanying changes in pharmaceutical companies and making them successful through effective project management is both our specific expertise as well as our passion.
+          .col.col-lg-5.col-sm-12.col-12
+            .comp-project-left
+              img(src="img/comp-2.png", alt="project managment")
+  .container-fluid
+    .row
+      .imp-photo
+        .imp-text
+        .rem-blur
+          h1 An important photo about Project management
+        .imp-link
+          a(href="#") More Info
+      .life-sc
+        .life-text
+          h1 Life Science Software Deplyment
+          p The validation of a new GxP software is only one part of the entire deployment process. Preparations in form of new processes, new user management systems and trainings are always needed to ensure a fully compliant use of new software packages. To integrate new software solutions in your daily work Zamann Pharma Support is able to provide entire life cycle solutions. From development to continuous support – our experts are ready to fin the best solutions for your company.
+  .container-fluid.bgc
+    .row
+      .container
+        .row
+          .col.col-sm-12.col-lg-5
+            .comp-outsourcing-left
+              img(src="img/comp-1.png", alt="outsourcing")
+          .col.col-sm-12.col-lg-7
+            .comp-outsourcing-right
+              h2#outsourcing 
+                strong Outsourcing
+              p very deployed GxP relevant software requires a high degree of support activities. Business Support can manifest itself in the form of regular user questions, process adaptations, deviation management, risk management and my more. It is very important to provide a solid business support solution to ensure maximum compliance and user acceptance. Zamann Pharma Support provides full support solutions for life science applications based on state of the art requirements. We ensure that your company enjoys maximum flexibility and solution driven support structures.
+
+  include ./mixins/footer.pug
