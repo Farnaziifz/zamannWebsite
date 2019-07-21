@@ -44,9 +44,15 @@ $(document).on("click", ".navbar-toggler", function () {
     
     $('.header').css('margin-top', '-100px')
     $('.header-comptetence').css('margin-top', '-100px')
+    $('#white-logo').attr('src', 'img/white-logo.png')
+    $('.navbar').removeClass('bg-light')
   } else {
     $('.header').css('margin-top', '0')
     $('.header-comptetence').css('margin-top', '0')
+    $('#white-logo').attr('src', 'img/ZPS-1.png')
+    $('.navbar').addClass('bg-light')
+    $('.navbar').addClass('navbar-light')
+    $('.navbar').removeClass('navbar-dark')
   }
   
 })
