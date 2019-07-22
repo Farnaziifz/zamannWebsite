@@ -43,7 +43,9 @@ $(document).on("click", ".navbar-toggler", function () {
   if($(this).hasClass("collapsed")) {
     
     $('.header').css('margin-top', '-100px')
-    $('.header-comptetence').css('margin-top', '-100px')
+    $('.header-comptetence').css('margin-top', '-100px')                p As project delivery methods have evolved, so has project leadership. Hybrid approaches have emerged, where traditional Waterfall project and program managers are now faced with the prospect of having a portion of their work use iterative Agile approaches. On the other side, Agile Scrum Masters and product managers executing rapid iterations of new products have to now contend with budgets, financial forecasts, release schedules and business case benefits, as well as with aligning implementation of products with other projects across the enterprise. 
+
+    $('.pharma-section-1').css('margin-top', '-100px')
     $('#white-logo').attr('src', 'img/white-logo.png')
     $('.navbar').removeClass('bg-light')
   } else {
@@ -53,6 +55,7 @@ $(document).on("click", ".navbar-toggler", function () {
     $('.navbar').addClass('bg-light')
     $('.navbar').addClass('navbar-light')
     $('.navbar').removeClass('navbar-dark')
+    $('.pharma-section-1').css('margin-top', '0')
   }
   
 })

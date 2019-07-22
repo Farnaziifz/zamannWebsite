@@ -1,0 +1,91 @@
+extends ./partial/layout.pug
+block vars
+  - var classPage = 'contact'
+block header
+  .container#indexContainer
+    .menu_box
+      block menu
+        include ./mixins/menu-2.pug
+block content
+  .container-fluid
+    .row
+      .col.col-sm-12.col-md-12.col-lg-12.col-xl-12.noPadding
+        .pharma-section-1
+          .pharma-head-1
+            h1 What is Pharmatching?
+          .pharma-desc
+              a(href="https://pharmatching.com") www.pharmatching.com
+              p is an efficient, targeted and easy-to-use 
+              strong industry 4.0 
+              p tool to find the right partners in the pharmaceutical world. The biggest life science outsourcing platform on the globe. It saves time and costs in all (out)sourcing, licensing and business development processes, as it facilitates and accelerates the searching process for appropriate business partners significantly.
+              br
+              br
+              a.white(href="") Pharmatching.com 
+              p is particularly advantageous for projects where a special service is required or to offer capacities which are currently available. It is useful for services in all categories and stages of drug development including:
+              .pharma-bullet
+                .row
+                  .col.col-lg-6.col-xl-6.col-md-6
+                    ul
+                      li contract manufacturing
+                      li contract research
+                      li laboratory investigations
+                      li contractual testing
+                      li non-clinical and clinical research
+                  .col.col-lg-6.col-xl-6.col-md-6
+                    ul
+                      li active pharmaceutical ingredients
+                      li consulting
+                      li marketing, registration
+                      li in- and outlicensing
+                      li And much more …
+              .pharma-bullet-small
+                .row
+                  .col.col-sm-12
+                    ul
+                      li contract manufacturing
+                      li contract research
+                      li laboratory investigations
+                      li contractual testing
+                      li non-clinical and clinical research
+                      li active pharmaceutical ingredients
+                      li consulting
+                      li marketing, registration
+                      li in- and outlicensing
+                      li And much more …
+          .pharma-btn-div
+            button.pharma-btn
+              a(href="#") Enter the global pharmaceutical market today!
+          .pharma-snake
+            .container-fluid
+              .row
+                .col-lg-6.col-md-6.col-xl-6
+                  .pharma-first-left
+                    h1 Database
+                    .first-left-box
+                      p Access to thousands of company profiles of locally, regionally or globally acting service providers
+                .col-lg-6.col-md-6.col-xl-6
+                  .pharma-first-right
+                    h1 Search Engine
+                    .first-right-box
+                      p Quick and comfortable search for all kind of pharma services and service providers over the web.
+            .container
+              .row
+                .col-lg-6.col-md-6.col-xl-6
+                  .pharma-sec-left
+                    h1 Free Matchmakeing
+                    .sec-left-box
+                      p salaPlace anonymous sourcing requests and receive applications of suitable providers within shortest time.
+                .col-lg-6.col-md-6.col-xl-6
+                  .pharma-sec-right
+                    h1 TARGETED BUSINESS DEVELOPMENT
+                    .sec-right-box
+                      p Apply to service requests and introduce your company targeted to buyers.
+          .pharmatching-logo
+            img(src="img/pharmaching.png", alt="")
+            p  Search in more than 
+              strong 13 thousands 
+              p.ee of Pharmacutical Service Provider
+            h2 How Pharmatching Works?
+          
+
+
